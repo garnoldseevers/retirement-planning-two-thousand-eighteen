@@ -26,7 +26,7 @@
 		<div style="text-align:center;"><a href="#inline-content-<?php echo $var1; ?>" rel="lightbox" data-gall="gall-frame" data-lightbox-type="inline"><img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?> a financial advisor in Kansas City"></a> </div>
 		<p style="text-align:center;"><strong><?php echo $position;?></strong></p>
 		<p style="text-align: center;"><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-grey" href="#inline-content-<?php echo $var1; ?>" rel="lightbox" data-gall="gall-frame" data-lightbox-type="inline">Read Bio</a></p>
-		<div class="team-member" id="inline-content-<?php echo $var1; ?>" >
+		<div class="team-member" id="inline-content-<?php echo $var1; ?>" style="display: none;">
 			<div class="row">
 				<div>
 		<?php if ($image) { ?>
