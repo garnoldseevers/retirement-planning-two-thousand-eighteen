@@ -40,7 +40,15 @@
 		</a>
 
             <?php 
-            the_excerpt(); 
+                $excerpt_value = get_the_content(); 
+                $new_excerpt = preg_replace("/<h1>[^>]+>/","",$excerpt_value);
+                $new_excerpt = preg_replace("/<h2>[^>]+>/","",$new_excerpt);
+                $new_excerpt = preg_replace("/<h3>[^>]+>/","",$new_excerpt);
+                $new_excerpt = preg_replace("/<h4>[^>]+>/","",$new_excerpt);
+				$new_excerpt = substr($new_excerpt,strpos($new_excerpt,'</strong>'),900);
+				$new_excerpt = strip_tags($new_excerpt);
+				$new_excerpt = substr($new_excerpt,0,strpos($new_excerpt,' ',225));
+                echo $new_excerpt."...";
             ?>
 				<p><a class="more-link vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-grey" href="<?php echo $the_link; ?>">Learn more</a></p>
 			</div><!-- .row -->
