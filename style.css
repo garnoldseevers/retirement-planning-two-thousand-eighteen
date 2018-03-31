@@ -1,0 +1,43 @@
+/*
+Theme Name: The Retirment Planning Group 2018
+Theme URI: http://hyperdo.com
+Author: the Hyperdo team
+Author URI: http://hyperdo.com/
+Description:  A Custom Wordpress Theme
+Version: 1.0
+License: Restricted
+
+*/
+
+.number-wrap{
+	overflow: hidden; 
+	padding: 20px 0; 
+}
+
+.number-wrap .phone-number{
+    float: right;
+    font: normal 400 34px/42px Roboto;
+    margin-top: 15px;
+    color: #942825;
+}
+
+#gform_submit_button_10,
+#gform_wrapper_10 .top_label input.medium, .gform_wrapper .top_label select.medium{
+    width: 100% !important;
+	max-width: 300px;
+}
+
+#gform_fields_10 .top_label .gfield_label{
+	display: none !important;
+}
+
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield span.name_first, 
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield span.name_last{
+		width: 100% !important;
+}
+
+/*FOOTER*/
+
+.mainfooter .container .row .col{
+	padding: 0 5px;
+}
