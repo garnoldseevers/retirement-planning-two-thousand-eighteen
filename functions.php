@@ -516,12 +516,3 @@ function remove_hentry( $classes ) {
 	}
 }
 add_filter( 'post_class', 'remove_hentry' );
-
-/* Move jQuery to head in order to remove class reference errors */
-function move_jquery_to_head() {
-
-	wp_deregister_script('jquery');
-	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
-
-}
-add_action('wp_enqueue_scripts', 'move_jquery_to_head');
